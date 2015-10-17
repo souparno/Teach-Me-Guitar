@@ -19,8 +19,8 @@ public class App {
         boolean iterate = true;
         int choice;
         do {
-            System.out.println("1. search a Scales by Notes");
-            System.out.println("2. Get a Scale Notes");
+            System.out.println("1. Determine a Scales by Notes");
+            System.out.println("2. Get the notes of a scale");
             System.out.println("3. Get the chord Progression");
             System.out.println("4. to quit");
             System.out.println("Input your choices");
@@ -68,7 +68,7 @@ public class App {
         String root_note = br.readLine();
         MajorScale majorscale = new MajorScale();
         String scale_notes[] = majorscale.get(root_note);
-        System.out.print("The notes for the " + root_note + " scale is :- ");
+        System.out.print("The notes for the " + root_note + " scale are :- ");
         for (String n : scale_notes) {
             System.out.print(n + ", ");
         }
