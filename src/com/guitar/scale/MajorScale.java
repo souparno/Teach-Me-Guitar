@@ -54,6 +54,9 @@ public class MajorScale {
                     break;
                 }
             }
+            if(!flag){
+                break;
+            }
         }
         return flag;
     }
