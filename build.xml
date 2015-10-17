@@ -1,0 +1,24 @@
+<project default='run'  basedir=".">
+  <property name="src" value="src"/>
+  <property name="build" value="build"/>
+  <property name="build-classes" value="build/classes"/> 
+ 
+  <target name="clean">
+    <delete dir="${build}"/>
+  </target>
+
+  <target name="mkdir" depends="clean">
+    <mkdir dir="${build-classes}"/>
+  </target>
+
+  <target name="compile" depends="mkdir">
+    <javac includeantruntime="false" 
+           srcdir="${src}" 
+           destdir="${build-classes}">
+    </javac>
+  </target>
+
+  <target name="run" depends="compile">
+    <java classpath="${build-classes}" classname="com.guitar.App"/>
+  </target> 
+</project>
