@@ -19,7 +19,7 @@ public class App {
         boolean iterate = true;
         int choice;
         do {
-            System.out.println("1. Determine a Scales by Notes");
+            System.out.println("1. Determine a Scale by Notes");
             System.out.println("2. Get the notes of a scale");
             System.out.println("3. Get the chord Progression");
             System.out.println("4. to quit");
